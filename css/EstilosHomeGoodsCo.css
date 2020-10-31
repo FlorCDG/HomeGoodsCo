@@ -1,0 +1,621 @@
+* {
+	box-sizing:border-box;
+	font-size:62.5%;
+}
+
+body{
+	font-family: 'Alice', serif;
+	font-family: 'Libre Baskerville', serif;
+	font-family: 'Merriweather Sans', sans-serif;
+	margin:left; 
+}
+
+header{
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background-image:linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+	height:15vh;
+}	
+
+#logo img {
+	margin: 10px;
+	width:20vh;
+	align-content: left;
+	background-color:#a5ccd1;
+}
+
+.Menu{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items:center;
+	align-content:flex-end;
+}
+
+ul {
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding:5px;
+	margin:4px;
+	align-items: center;
+	list-style: none;
+	font-family:'Baskerville', sans-serif;
+	font-size:1rem;
+	color:#06D6A0;
+	font-weight: bold;
+	text-decoration: none;
+
+}	
+
+li{ 
+	background-color:#081C15;
+	display:inline-block;
+	position:relative;
+	font-size:1rem; 
+	list-style: none;	
+	border: solid 1px;
+	padding:5px;
+	margin:5px;
+
+}
+
+ul ul {
+	position:absolute;
+	display:none;
+	text-decoration:none;
+	font-family: 'Baskerville', sans-serif;
+	color:#06D6A0;
+	border: solid 1px;
+}	
+
+ul ul li {
+	list-style:none;
+	font-family:'Baskerville', sans-serif;
+	text-decoration:none;
+	font-size:1.5rem;
+	color:#06D6A0;
+	padding:2px;
+	margin:2px;
+	border:solid 1px;
+}
+
+ul li:hover ul {
+	display:block;
+	list-style:none;
+	font-family:'Baskerville', sans-serif;
+	text-decoration:none;
+	font-size:1rem;
+	color:#06D6A0;
+	padding:2px;
+	margin:2px;
+	overflow: hidden;
+	z-index:1;
+}
+
+a {
+	display:inline-block;
+	width:auto;
+	position:relative;
+	font-size:2rem; 
+	list-style:none;
+	text-decoration:none;
+	font-family:'Baskerville', sans-serif;
+	color:#06D6A0;
+	padding:5px;
+}
+
+
+main section {
+	background-image:linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
+	text-align:justify;
+}
+
+main aside{
+	background-color:#10002B;
+	text-align:justify;
+}
+
+img{
+	padding-bottom: 5px;
+	margin:5px;
+}
+
+.Titulos{
+	font-family: 'Alice', serif;
+	color:#7400B8;
+	font-weight:bold;
+	padding:5px;
+	margin:5px;
+	font-size:2rem;
+	line-height:2.5rem;
+	background-color:#83c5be;
+}
+
+.TextoPrincipal{
+	font-family: 'Libre Baskerville', serif;
+	color:#2B2429;
+	font-weight:normal;
+	font-size:2rem;
+	padding:5px;
+	text-align:justify;
+}
+
+.TextoSecundario{
+	font-family:'Libre Baskerville', serif;
+	color:black;
+	font-weight:normal;
+	font-size:1.7rem;
+	padding:5px;
+	text-align:justify;
+}
+
+.TextoAside{
+	font-family:'Libre Baskerville', serif;
+	color:white;
+	font-weight:normal;
+	font-size:1.7rem;
+	padding:5px;
+	text-align:justify;
+
+}
+
+#cuadros div {
+	background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+	text-align:justify;
+}
+
+footer{
+    background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%); !important;
+}
+
+
+.TitulosFooter{
+    text-align: center;
+    background-image: linear-gradient(to top, #5f72bd 0%, #9b23ea 100%);
+    padding: 3px;
+    color: 264653;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.TextoPieFooter {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.fa {
+	padding: 1rem;
+	font-size: 4rem !important;
+	text-align: center;
+	text-decoration: none !important;	
+	margin: 5px 2px;
+	color:#1B3A4B;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+
+                 /*HTML NOSOTROS*/
+
+.FondoNosotros{
+	background-color: #006466;
+
+}
+
+.TitulosNosotros{
+	display: flex;
+	flex-direction: wrap-row;
+	justify-content:flex-start;
+	align-items: right;
+	font-family: 'Alice', serif;
+	color:#b7e4c7;
+	font-weight: bold;
+	font-size: 2.5rem;
+	text-decoration-line: underline;
+	margin:10px;
+	line-height: 3rem;
+
+}
+
+.TextoPrincipalNosotros{
+	margin:10px;
+	font-family: 'Libre Baskerville', serif;
+	color: white;
+	font-weight: normal;
+	font-size: 2rem;
+	
+}
+
+
+               /*HTML SERVICIOS*/
+
+.FondoServicios{
+	background-image: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%);
+	padding:10px;
+	text-align: center;
+}
+
+section.ContenedorGrid div{
+	padding: 10px;
+}
+
+.ContenedorGrid{
+	display:grid;
+	grid-template-columns: repeat (3,1fr);
+	grid-template-rows: repeat (3, 1fr 3fr 2fr);
+	grid-gap:5px;
+}
+
+section.ContenedorGrid div{
+	padding: 10px;
+}
+
+.ContenedorGrid{
+	display:grid;
+	grid-template-columns: repeat (3,1fr);
+	grid-template-rows: repeat (3, 1fr 3fr 2fr);
+	grid-gap:5px;
+}
+
+section .ContenedorGrid {
+	padding:5px;
+}
+
+.Iluminacion {
+	font-family: 'Alice', serif;
+	color:#7400B8;
+	font-weight:bold;
+	padding:5px;
+	margin:5px;
+	font-size:2rem;
+	line-height:2.5rem;
+	background-color:#83c5be;
+	
+}
+
+.DescripcionLuces{
+	font-family: 'Libre Baskerville', serif;
+	color:black;
+	font-weight: normal;
+	font-size: 2.5rem;
+}
+
+.FotosLuces {
+	display:flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: row;
+}
+
+.LamparaTecho1:hover img{
+	transform: scale(2);
+	height:10%
+	width:10%;
+	transition:2s;
+}
+
+.LamparaTecho2:hover img{
+	transform: scale(2);
+	height:10%
+	width:10%;
+	transition:2s;
+}
+
+.LamparaPie:hover img{
+	transform: scale(2);
+	height:10%
+	width:10%;
+	transition:2s;
+}
+
+.Veladores:hover img{
+	transform: scale(2);
+	height:10%
+	width:10%;
+	transition:2s;
+}
+
+.Muebles {
+	font-family: 'Alice', serif;
+	color:#7400B8;
+	font-weight:bold;
+	padding:5px;
+	margin:5px;
+	font-size:2rem;
+	line-height:2.5rem;
+	background-color:#83c5be;
+}
+
+.DescripcionMuebles{
+	font-family: 'Libre Baskerville', serif;
+	color:#2B2429;
+	font-weight: normal;
+	font-size: 2rem;
+}
+
+.FotosMuebles{
+	display:flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin:0;
+  	padding:0;
+  	flex-grow:1;
+}
+
+.Biblioteca1:hover img{
+	transform: scale(2);
+	height:10%
+	width:10%;
+	transition:2s;
+}
+
+.Comedor:hover img{
+	transform: scale(2);
+	height:10%
+	width:10%;
+	transition:2s;
+}
+
+.Arrime:hover img{
+	transform: scale(2);
+	height:10%
+	width:10%;
+	transition:2s;
+}
+
+.Sillon:hover img{
+	transform: scale(2);
+	height:10%
+	width:10%;
+	transition:2s;
+}
+
+.Asesoria {
+	font-family: 'Alice', serif;
+	color:#7400B8;
+	font-weight:bold;
+	padding:5px;
+	margin:5px;
+	font-size:2rem;
+	line-height:2.5rem;
+	background-color:#83c5be;
+}
+
+.DescripcionAsesoria {
+	font-family: 'Libre Baskerville', serif;
+	color:#2B2429;
+	font-weight: normal;
+	font-size: 2rem;
+}
+
+.FotosAsesoria{
+	display:flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;	
+
+}
+
+.Balcon:hover img{
+	transform: scale(2);
+	height:10%
+	width:10%;
+	transition:2s;
+}
+
+.Cuarto3:hover img{
+	transform: scale(2);
+	height:10%
+	width:10%;
+	transition:2s;
+}
+
+.Cuarto1:hover img{
+	transform: scale(2);
+	height:10%
+	width:10%;
+	transition:2s;
+}
+
+.Cuarto2:hover img{
+	transform: scale(2);
+	height:10%
+	width:10%;
+	transition:2s;
+}
+.ContenedorGrid{
+	display:grid;
+	grid-template-columns: repeat (3,1fr);
+	grid-template-rows: repeat (3, 1fr 3fr 2fr);
+	grid-gap:5px;
+}
+
+
+section .ContenedorGrid {
+	padding:10px;
+}
+
+.Iluminacion {
+	font-family: 'Alice', serif;
+	color:#7400B8;
+	font-weight:bold;
+	padding:5px;
+	margin:5px;
+	font-size:2rem;
+	line-height:2.5rem;
+	background-color:#83c5be;
+}
+
+.DescripcionLuces{
+	font-family: 'Libre Baskerville', serif;
+	color:#2B2429;
+	font-weight: normal;
+	font-size: 2rem;
+}
+
+.FotosLuces {
+	display:flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;	
+}
+
+.FotosLuces img:hover{
+	flex-grow:1;
+	margin:10px;
+	justify-content: space-between;
+	object-fit: scale-down;
+	transform: scale(2);
+	height:10%
+	width:10%;
+	transition:2s; 
+	margin:20%;
+}
+
+.Muebles {
+	font-family: 'Alice', serif;
+	color:#7400B8;
+	font-weight:bold;
+	padding:5px;
+	margin:5px;
+	font-size:2rem;
+	line-height:2.5rem;
+	background-color:#83c5be;
+}
+
+.DescripcionMuebles{
+	font-family: 'Libre Baskerville', serif;
+	color:#2B2429;
+	font-weight: normal;
+	font-size: 2rem;
+}
+
+.FotosMuebles{
+	display:flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin:0;
+  	padding:0;
+  	flex-grow:1;
+}
+
+.FotosMuebles img:hover{
+	flex-grow:1;
+	margin:10px;
+	justify-content: space-between;
+	object-fit: scale-down;
+	transform: scale(2);
+	height:10%
+	width:10%;
+	transition:2s; 
+	margin:20%;
+}
+
+.Asesoria {
+	font-family: 'Alice', serif;
+	color:#7400B8;
+	font-weight:bold;
+	padding:5px;
+	margin:5px;
+	font-size:2rem;
+	line-height:2.5rem;
+	background-color:#83c5be;
+}
+
+.DescripcionAsesoria {
+	font-family: 'Libre Baskerville', serif;
+	color:#2B2429;
+	font-weight: normal;
+	font-size: 2rem;
+}
+
+.FotosAsesoria{
+	display:flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;	
+
+}
+
+.FotosAsesoria img:hover{
+	flex-grow:1;
+	margin:10px;
+	justify-content: space-between;
+	object-fit: scale-down;
+	transform: scale(2);
+	height:10%
+	width:10%;
+	transition:2s; 
+	margin:20%;
+}
+
+
+
+            /*HTML CONTACTO*/
+
+
+.FondoContacto{
+	background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+
+}
+
+.Data{
+	font-family: "Alice", sans-serif;
+	font-size:2rem;
+	color: black;
+	padding:5px;
+	margin:5px;
+}
+
+.TextoFormulario{
+	font-family: "Alice", sans-serif;
+	font-size:2rem;
+	color: black;
+	padding:5px;
+	margin:5px;
+}
+
+textarea{
+	display: flex;
+	height: 30vh;
+	width: 60vw;
+	padding:5px;
+	margin:5px;
+}
+
+.Botones{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-family: "Alice", sans-serif;
+	font-size:2rem;
+	padding:10px;
+	margin:5px;
+}
+
+               /*HTML SHOP*/
+
+.FondoShop{
+
+	background-color: #83c5be;
+}
+
+.PiedeFoto:hover { 
+	display:block;
+	overflow: hidden;
+	z-index:1;
+	font-family: 'Merriweather', serif;
+	background-color: white;
+	color:#6f08c9;
+	font-weight: bold;
+	font-size:1.7rem;
+	padding: 5px;
+	text-align: justify;
+}
